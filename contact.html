@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<link rel="icon" href="Imagenes/b4a999c1302e3ac123c041fd41bb8a34528c6ab5.webp"> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Formulario — Silksong</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Formulario — Silksong</h1>
+    <p class="lead">Formulario sobre satisfaccion.</p>
+  </header>
+
+  <nav id="main-nav" role="navigation" aria-label="Navegación principal">
+    <ul class="nav-list">
+      <li><a href="index.html" data-section="inicio">Inicio</a></li>
+      <li><a href="about.html" data-section="sobre">Personajes</a></li>
+      <li><a href="contact.html" class="active" data-section="contacto">Formulario</a></li>
+    </ul>
+  </nav>
+
+  <main class="grid-main">
+    <section>
+      <article>
+        <h2>Envíanos un mensaje</h2>
+        <form action="#" method="post" novalidate>
+          <fieldset>
+            <legend>Datos personales</legend>
+
+            <label for="email">Email (obligatorio)</label>
+            <input id="email" type="email" name="email" required placeholder="tú@ejemplo.com">
+
+            <label for="fecha">Fecha de preferencia</label>
+            <input id="fecha" type="date" name="fecha">
+
+            <label for="satisf">Satisfacción (1-10)</label>
+            <input id="satisf" type="range" name="satisf" min="1" max="10" value="7">
+
+            <label for="numero">Número de asistentes (1-5)</label>
+            <input id="numero" type="number" name="numero" min="1" max="5" value="1">
+          </fieldset>
+
+          <fieldset>
+            <legend>Dirección</legend>
+            <label for="cp">Código postal (5 dígitos)</label>
+            <input id="cp" type="text" name="cp" pattern="^\d{5}$" placeholder="28001">
+          </fieldset>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </article>
+
+      <article>
+        <h2>Mapa</h2>
+        <iframe title="mapa" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.1276,51.5072,-0.1276,51.5072" style="height:300px"></iframe>
+      </article>
+    </section>
+
+    <aside>
+      <div class="card small">
+        <h4>¡Gracias por visitar nuestra página!</h4>
+        <p>Valoramos mucho tu tiempo y esperamos que hayas encontrado lo que buscabas.</p>
+ <h4>¡Vuelve cuando quieras, siempre eres bienvenido!</h4>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Contacto · Horizonte Fragmentado</p>
+  </footer>
+</body>
+</html>
